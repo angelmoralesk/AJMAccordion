@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FpX-yZ-tgT" customClass="ContentCollectionViewCell" customModule="AJMAccordion" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cht-2m-fLj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fP5-wE-rQv">
+                                <rect key="frame" x="8" y="8" width="359" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fP5-wE-rQv" secondAttribute="bottom" constant="8" id="GRT-qc-qjd"/>
+                            <constraint firstAttribute="trailing" secondItem="fP5-wE-rQv" secondAttribute="trailing" constant="8" id="SCW-q7-jHw"/>
+                            <constraint firstItem="fP5-wE-rQv" firstAttribute="top" secondItem="cht-2m-fLj" secondAttribute="top" constant="8" id="Vez-NC-Oh6"/>
+                            <constraint firstItem="fP5-wE-rQv" firstAttribute="leading" secondItem="cht-2m-fLj" secondAttribute="leading" constant="8" id="jXB-qe-lXI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cht-2m-fLj" firstAttribute="leading" secondItem="FpX-yZ-tgT" secondAttribute="leading" id="Wyi-vE-aJE"/>
+                <constraint firstAttribute="trailing" secondItem="cht-2m-fLj" secondAttribute="trailing" id="pjh-cS-4f3"/>
+                <constraint firstItem="cht-2m-fLj" firstAttribute="top" secondItem="FpX-yZ-tgT" secondAttribute="top" id="rT2-pD-BS1"/>
+                <constraint firstAttribute="bottom" secondItem="cht-2m-fLj" secondAttribute="bottom" id="teT-00-dpQ"/>
+            </constraints>
+            <size key="customSize" width="375" height="100"/>
+            <point key="canvasLocation" x="33.5" y="79"/>
+        </collectionViewCell>
+    </objects>
+</document>
